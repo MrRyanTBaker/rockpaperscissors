@@ -9,21 +9,23 @@
     
 </head>    
 
-<body>
+<body class="background">
+
 <!-- add elements that allow to select picture, highlight on select, and input response rather than type --> 
     
+
 <script>
     
 var userChoice = prompt("Do you choose rock, paper or scissors?");
 
 var computerChoice = Math.random();
 
-if (0 <= computerChoice <= 0.33) { //sets perameters of random selection//
+if (0 <= computerChoice <= 0.33) { /*sets perameters of random selection*/
 	computerChoice = "rock";
 } else if(.34 <= computerChoice <= .66) {
 	computerChoice = "paper";
-} else {computerChoice = "scissors";}
-//sets up condition of typed response and computer generated response//
+} else {computerChoice = "scissors";};  /*sets up condition of typed response and computer generated response*/
+
 var compare = function (choice1, choice2) {if (choice1===choice2) {return "The result is a tie!";}
 
 else if(choice1==="rock") 
@@ -35,9 +37,10 @@ if (choice2==="rock") {return"You Win!";} else if(choice2==="scissors") {return 
 else if(choice1==="scissors") 
 if (choice2==="rock") {return"You Lose!";} else if(choice2==="paper") {return "You Win!";}};
 
-console.log(compare(userChoice,computerChoice));    //prints outcome in the inspect element//
-                    //figure out way to include this on regular screen//
-                    //loop to start over again after it's been declared//
+console.log(compare(userChoice,computerChoice));    
+                    /*prints outcome in the inspect element*/
+                    /*figure out way to include this on regular screen*/
+                    /*loop to start over again after it's been declared*/
 
 </script>    
     
