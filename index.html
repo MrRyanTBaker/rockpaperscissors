@@ -28,18 +28,18 @@ else {
 	computerChoice = "scissors";
 }
 
-var compare = function (choice1, choice2) {if (choice1 === choice2) {return "The result is a tie!";}
+var compare = function (choice1, choice2) {if (choice1 === choice2) {return "You Tied!";}
 
-else if(choice1==="rock") {if (choice2==="scissors") {return"Rock Wins!";}
-else if (choice2==="paper") {return "Paper Wins!";}}
+else if(choice1==="rock") {if (choice2==="scissors") {return"You Beat Scissors!";}
+else if (choice2==="paper") {return "You Lose to Paper!";}}
 
-else if(choice1==="paper") {if (choice2==="rock") {return"Paper Wins!";}
-else if (choice2==="scissors") {return "Scissors Wins!";}}
+else if(choice1==="paper") {if (choice2==="rock") {return"You Beat Rock!";}
+else if (choice2==="scissors") {return "You Lose to Scissors!";}}
 
-else if(choice1==="scissors") {if (choice2==="rock") {return"Rock Wins!";}
-else if (choice2==="paper") {return "Paper Wins!";}}};
+else if(choice1==="scissors") {if (choice2==="rock") {return"You Lose to Rock!";}
+else if (choice2==="paper") {return "You Beat Paper!";}}};
 
-console.log(compare(userChoice,computerChoice));     
+window.alert(compare(userChoice,computerChoice));     
 </script>    
     
     
